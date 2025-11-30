@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #.
 
-PID_FILE="/var/run/myscript.pid"
+PID_FILE=" /var/run/myscript.pid"
 echo $$ > "$PID_FILE"
 
 trap 'echo "I hate the kill command"; rm -f "$PID_FILE"; exit' SIGTERM SIGQUIT
