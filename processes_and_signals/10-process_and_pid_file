@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 #.
-PID_FILE="/tmp/myscript.pid"
-echo $$ > "$PID_FILE"
+echo $$ > /var/run/myscript.pid
 trap 'echo "I hate the kill command"' SIGTERM
 trap 'echo "Y U no love me?!"' SIGINT
-trap 'rm -f "$PID_FILE"; exit' SIGQUIT SIGTERM
-while true; do
-    echo "To infinity and beyond"
-    sleep 2
-done
+trap 'rm -rf /var/run/myscript.pid' SIGQUIT
