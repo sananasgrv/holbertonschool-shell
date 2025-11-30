@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Generate a story for each user in /etc/passwd
+# Story from /etc/passwd
 
 while IFS=: read -r username password userid groupid gecos home shell; do
     echo "The user $username is part of the $groupid gang, lives in $home and rides $shell."
