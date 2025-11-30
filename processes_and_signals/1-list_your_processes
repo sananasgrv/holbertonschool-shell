@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#listing the process
+ps aux
