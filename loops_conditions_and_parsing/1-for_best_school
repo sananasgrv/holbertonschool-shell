@@ -1,2 +1,2 @@
-#!/bin/bash
+#!/usr/bin/env bash
 for i in range {1..10}; do echo 'Best scholl';done
