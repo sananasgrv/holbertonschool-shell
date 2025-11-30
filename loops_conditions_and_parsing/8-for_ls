@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
-# List files in current directory with ls, show only part after first dash
-for file in *; do echo "$file"; done
+# List files in current directory, show only part after first dash
 
+for file in *; do
+    # Skip hidden files (already ignored by *)
+    if [[ "$file" == *-* ]]; then
+        echo "${file#*-}"
+    else
+        echo "$file"
+    fi
+done
