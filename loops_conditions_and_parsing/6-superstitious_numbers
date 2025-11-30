@@ -12,7 +12,11 @@ while [ $i -le 20 ]; do
         echo "$i"
         echo "bad luck from Japan"
         ;;
-    *)
+    17)
+	echo "$i"
+	echo "bad luck from Italy"
+	;;
+     *)
         echo "$i"
         ;;
 esac
