@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 # List files in current directory with ls, show only part after first dash
-
-for file in $(ls); do
-        echo "${file#*-}"
-done
+for file in *; do echo "$file"; done
 
