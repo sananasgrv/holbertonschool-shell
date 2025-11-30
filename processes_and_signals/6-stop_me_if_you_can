@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#another way to stopping 
+pkill pgrep 7-highlander
